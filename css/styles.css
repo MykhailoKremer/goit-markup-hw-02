@@ -9,8 +9,6 @@
 }
 /* =======================Цветовая палитра текста и фонов====================== */
 
-
-
 /* ============================Header section styles================================== */
 
 body {
@@ -29,6 +27,7 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #000;
+  margin: 25px 93px 25px 0px;
 }
 
 .main-logo-first-half {
@@ -36,8 +35,16 @@ body {
   color: var(--selection-color);
 }
 
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
 .nav-bar-links {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 295px;
 }
 
 .nav-bar-link {
@@ -65,6 +72,11 @@ body {
 
 .header-contacts {
   list-style: none;
+  display: flex;
+  margin-left: 330px;
+  width: 310px;
+  justify-content: space-between;
+  padding: 0px;
 }
 
 .header-contact-link {
@@ -86,6 +98,8 @@ body {
 
 .hero-section {
   background-color: var(--darkest-bgnd-color);
+  display: flex;
+  align-items: center;
 }
 
 .hero-title {
@@ -97,6 +111,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   background-color: var(--darkest-bgnd-color);
+  margin-top: 200px;
 }
 
 .hero-title-button {
@@ -105,14 +120,15 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 200px;
 }
 
 .our-values-header {
@@ -121,6 +137,13 @@ body {
 
 .our-values-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 .our-value-title {
@@ -130,6 +153,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
+  text-align: left;
 }
 
 .our-value-description {
@@ -137,6 +161,28 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--smaller-text-color);
+  text-align: left;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .our-team-section {
@@ -148,13 +194,34 @@ body {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.15;
-  text-align: center;s
   letter-spacing: 0.03em;
+  padding: 0px 0px 50px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.our-activity-images-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
 }
 
 .our-activity-images-list,
 .our-team-member-list {
   list-style: none;
+}
+
+.our-team-member-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+
+.our-team-member-card {
+  border-bottom: 1px solid;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
 }
 
 .team-member-name {
@@ -186,10 +253,23 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: flex;
+  padding-top: 60px;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.address-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .address-links-list {
   list-style: none;
+  padding-left: 0px;
+  padding-bottom: 60px;
 }
 
 .physical-address-link {
@@ -220,6 +300,9 @@ body {
 
 .filter-list {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
 }
 
 .filter-button {
@@ -231,23 +314,44 @@ body {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  border: solid #f5f4fa;
   border-radius: 4px;
+  border-color: #f5f4fa;
   cursor: pointer;
+  margin: 0px 8px 0px 8px;
+  padding: 6px 22px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   background-color: var(--selection-color);
   color: #fff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: solid var(--selection-color);
 }
 
 .projects-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.projects-list-item {
+  margin-top: 30px;
 }
 
 .projects-list-link {
-text-decoration: none;
+  text-decoration: none;
+}
 
+.project-link-text-part {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .project-title {
